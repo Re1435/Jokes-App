@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const USER_NAME = "Arjun";
-const PASSWORD = "Arjun@2024";
+const USER_NAME = "Mahi";
+const PASSWORD = "Mahi@2024";
 
 const Login = () => {
   const navigation = useNavigate();
@@ -19,7 +19,7 @@ const Login = () => {
   const submitForm = (e) => {
     e.preventDefault();
     if (username === USER_NAME && password === PASSWORD) {
-      navigation("/");
+      navigation("/home");
     }
     if (username === "" || password === "") {
       alert("Please Enter the Login Details!");
