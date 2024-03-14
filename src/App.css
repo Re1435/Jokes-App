@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.login-page {
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 160px;
 }
 
-.App-link {
-  color: #61dafb;
+.login-page h1 {
+  font-weight: 700;
+  font-style: normal;
+  color: blueviolet;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-field {
+  margin-bottom: 50px;
+}
+.input-field input {
+  height: 60px;
+  width: 420px;
+  max-width: 530px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 5px 5px 5px rgb(217, 187, 246);
+  outline: none;
+}
+.input-field button {
+  height: 60px;
+  width: 420px;
+  border: 3px solid blueviolet;
+  border-radius: 16px;
+  padding: 10px;
+  background: transparent;
+  color: blueviolet;
+  font-size: 24px;
+  font-weight: 500;
+}
+.input-field button:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .login-page {
+    margin-top: 80px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .login-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    margin-bottom: 30px;
+  }
+
+  .input-field input,
+  .input-field button {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .input-field input {
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .input-field button {
+    height: 50px;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 20px;
   }
 }
